@@ -4,7 +4,7 @@ function MainSection(){
     return(
         <>
             <main className="App section1">
-        <header>
+            <header>
                 <div className="header-bg">
                     <a className="logo">
                         <img src="media/logo.svg" alt="CoolKids Logo"/>
@@ -31,7 +31,7 @@ function MainSection(){
             <img src="media/Group 36.svg" alt="" className="absolut-img-1 absolute"/>
             <div className="main">
                 <div className="main-info">
-                    <h1>
+                    <h1 className='animated-element animate__animated animate__fadeInUp'>
                         find the best fashion style for you
                     </h1>
                     <p>
