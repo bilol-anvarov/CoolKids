@@ -1,0 +1,244 @@
+$max-width: 1185px;
+$frank: 'Frank Ruhl Libre', serif;
+$lato: 'Lato', sans-serif;
+$color-white: #F9F1F0;
+$color-black: #140005;
+body{
+    main.section1{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        max-height: 1400px;
+        background-color: #FADCD9;
+        header{
+            width: 100%;
+            background-color: transparent;
+            .header-bg{
+                width: 100%;
+                max-width: $max-width;
+                margin: 0 auto;
+                padding: 50px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .logo img{
+                    width: 200px;
+                    height: 60px;
+                }
+                .logo{
+                    z-index: 40;
+                }
+                nav{
+                    width: 50%;
+                    .links{
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                            list-style: none;
+                            li{
+                                a{
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                    color: black;
+                                    font-weight: 700;
+                                    font-family: $lato;
+                                    font-size: 16px;
+                                    padding-bottom: 3px;
+                                    background: linear-gradient(to right, black, #000000);
+                                    background-size: 0 2px;
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 100%;
+                                    transition: all 0.2s ease-in-out;
+                                    &:hover{
+                                        background-size: 100% 2px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .hamburger{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .absolut-img-1{
+            transform: translateY(-20px);
+        }
+        .main{
+            width: 100%;
+            max-width: $max-width;
+            padding: 15px;
+            z-index: 10;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .main-info{
+                width: 100%;
+                max-width: 500px;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                h1{
+                    font-size: 68px;
+                    font-family: $frank;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 30px;
+                }
+                p{
+                    line-height: 180%;
+                    font-weight: 400;
+                    max-width: 380px;
+                }
+                a{
+                    text-transform: uppercase;
+                    color: $color-white;
+                    background-color: $color-black;
+                    padding: 20px 70px;
+                    margin-top: 50px;
+                    transition: all 0.3s ease-in-out;
+                    border: solid 3px $color-black;
+                    font-weight: 700;
+                    text-decoration: none;
+                    width: fit-content;
+                    &:hover{
+                        color: $color-black;
+                        background-color: transparent;
+                    }
+                }
+            }
+            .absolut-img-2{
+                top: 30%;
+                left: 54%;
+                z-index: 25;
+            }
+            .main-img{
+                width: 100%;
+                max-width: 480px;
+                overflow: hidden;
+                border-radius: 0 0 0 250px;
+                background-color: #E0B499;
+                z-index: 10;
+                img{
+                    width: 80%;
+                    transform: translateY(5px) translateX(60px);
+                }
+            }
+            .absolut-img-3{
+                bottom: 10%;
+                right: 10%;
+                z-index: 25;
+            }
+        }
+        img.main-bottom{
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+        }
+    }
+    .absolute{
+        position: absolute;
+    }
+    p{
+        font-family: $lato;
+        font-size: 16px;
+        color: #140005;
+    }
+}
+
+@media(max-width: 900px){
+    header{
+        .logo img{
+            width: 135px !important;
+            height: 40px !important;
+        }
+        nav{
+            display: flex;
+            justify-content: end;
+            .links{
+                position: absolute;
+                max-height: 0;
+                height: 70%;
+                width: 100%;
+                left: 0;
+                transition: all 0.3s ease-in-out;
+                top: 0;
+                right: 0;
+                background: rgb(255,255,255);
+                background: linear-gradient(45deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 100%);
+                backdrop-filter: blur(5px);
+                overflow: hidden;
+                z-index: 35;
+                ul{
+                    padding: 150px 50px 50px;
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+            .hamburger {
+                display: block !important;
+                width: fit-content;
+                cursor: pointer;
+                z-index: 40;
+                svg {
+                    /* The size of the SVG defines the overall size */
+                    height: 3em;
+                    /* Define the transition for transforming the SVG */
+                    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+                    .line-top-bottom {
+                        stroke-dasharray: 12 63;
+                    }                    
+                    .line {
+                        fill: none;
+                        stroke: white;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 3;
+                        /* Define the transition for transforming the Stroke */
+                        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+                      }
+                      
+                }
+                &.active{
+                    svg {
+                        transform: rotate(-45deg);
+                        .line-top-bottom {
+                            stroke-dasharray: 20 300;
+                            stroke-dashoffset: -32.42;
+                        }
+                    }                      
+                }
+            }
+        }
+        &.active{
+            .links{
+                max-height: 500px;
+            }
+        }
+    }
+    .main{
+        flex-direction: column;
+        gap: 20px;
+        padding-right: 0 !important;
+        .main-img{
+            align-self: flex-end;
+        }
+        .absolut-img-2{
+            top: 140% !important;
+            right: 60% !important;
+            left: auto !important;
+        }
+    }
+    .absolut-img-3,
+    .absolut-img-1{
+        opacity: 0.4;
+    }
+}
+
+  
