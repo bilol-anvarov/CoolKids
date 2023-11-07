@@ -1,10 +1,13 @@
 import './App.css';
 import './componets/main-section/main-section.css'
 import MainSection from './componets/main-section/main-section';
-
+import SectionTwo from './componets/section-two/section-two';
 function App() {
   return (
-    <MainSection />
+    <div>
+      <MainSection />
+      <SectionTwo />
+    </div>
   );
 }
 

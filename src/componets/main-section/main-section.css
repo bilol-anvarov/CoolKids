@@ -95,12 +95,25 @@ body main.section1 .main .main-info {
           flex-direction: column;
 }
 body main.section1 .main .main-info h1 {
-  font-size: 68px;
+  font-size: 60px;
   font-family: "Frank Ruhl Libre", serif;
   text-transform: capitalize;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 30px;
+}
+body main.section1 .main .main-info h1 span {
+  text-transform: uppercase;
+  min-width: 20px;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+body main.section1 .main .main-info h1:hover span.text-elastic {
+  -webkit-animation: elastic 2s;
+          animation: elastic 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body main.section1 .main .main-info p {
   line-height: 180%;
@@ -271,5 +284,81 @@ body p {
   .absolut-img-3,
 .absolut-img-1 {
     opacity: 0.4;
+  }
+}
+@-webkit-keyframes elastic {
+  0%, 20% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+  30% {
+    -webkit-transform: scaleX(2) scaleY(0.8);
+            transform: scaleX(2) scaleY(0.8);
+  }
+  40% {
+    -webkit-transform: scaleX(0.5) scaleY(1.2);
+            transform: scaleX(0.5) scaleY(1.2);
+  }
+  50% {
+    -webkit-transform: scaleX(1.2) scaleY(0.9);
+            transform: scaleX(1.2) scaleY(0.9);
+  }
+  60% {
+    -webkit-transform: scaleX(0.8) scaleY(1.1);
+            transform: scaleX(0.8) scaleY(1.1);
+  }
+  70% {
+    -webkit-transform: scaleX(1.1) scaleY(0.95);
+            transform: scaleX(1.1) scaleY(0.95);
+  }
+  80% {
+    -webkit-transform: scaleX(0.9) scaleY(1.05);
+            transform: scaleX(0.9) scaleY(1.05);
+  }
+  90% {
+    -webkit-transform: scaleX(1.05) scaleY(0.98);
+            transform: scaleX(1.05) scaleY(0.98);
+  }
+  100% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+}
+@keyframes elastic {
+  0%, 20% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+  30% {
+    -webkit-transform: scaleX(2) scaleY(0.8);
+            transform: scaleX(2) scaleY(0.8);
+  }
+  40% {
+    -webkit-transform: scaleX(0.5) scaleY(1.2);
+            transform: scaleX(0.5) scaleY(1.2);
+  }
+  50% {
+    -webkit-transform: scaleX(1.2) scaleY(0.9);
+            transform: scaleX(1.2) scaleY(0.9);
+  }
+  60% {
+    -webkit-transform: scaleX(0.8) scaleY(1.1);
+            transform: scaleX(0.8) scaleY(1.1);
+  }
+  70% {
+    -webkit-transform: scaleX(1.1) scaleY(0.95);
+            transform: scaleX(1.1) scaleY(0.95);
+  }
+  80% {
+    -webkit-transform: scaleX(0.9) scaleY(1.05);
+            transform: scaleX(0.9) scaleY(1.05);
+  }
+  90% {
+    -webkit-transform: scaleX(1.05) scaleY(0.98);
+            transform: scaleX(1.05) scaleY(0.98);
+  }
+  100% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
   }
 }
