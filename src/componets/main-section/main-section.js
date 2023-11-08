@@ -34,7 +34,7 @@ function MainSection(){
             <div className="main">
                 <div className="main-info animate__animated fade-up">
                     <h1 id='hoverElem'>
-                        find the best fashion style for you
+                        find the best fashion style for youu
                     </h1>
                     <p>
                         Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.

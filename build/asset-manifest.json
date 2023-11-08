@@ -11,5 +11,8 @@
   "entrypoints": [
     "static/css/main.ebf9df02.css",
     "static/js/main.75f343b0.js"
-  ]
+  ],
+  "scripts": {
+    "build": "your-build-command-here"
+  }
 }
