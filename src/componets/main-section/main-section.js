@@ -55,8 +55,10 @@ function MainSection(){
     )
 }
 // анимации
-window.addEventListener('load', onScrollAndLoad);
 window.addEventListener('load', hoverToText);
-window.addEventListener('scroll', onScrollAndLoad);
-  
+
+window.addEventListener('load', function () {
+    onScrollAndLoad();
+    window.removeEventListener('scroll', onScrollAndLoad);
+});
 export default MainSection;
