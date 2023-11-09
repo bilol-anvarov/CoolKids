@@ -1,14 +1,38 @@
+import ScrollMagic from 'scrollmagic';
+
 function handleAnimation(className, animationClass) {
-    let elements = document.querySelectorAll(className);
-    elements.forEach(element => {
-        const rect = element.getBoundingClientRect();
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-            element.classList.add(animationClass);
-        } else {
-            element.classList.remove(animationClass);
-        }
-    });
+  // Создайте экземпляр ScrollMagic Controller
+  var controller = new ScrollMagic.Controller();
+
+  var sections = document.querySelectorAll(className);
+
+  sections.forEach(function (section) {
+    // Создайте экземпляр ScrollMagic Scene для каждой секции
+    var scene = new ScrollMagic.Scene({
+      triggerElement: section,
+      triggerHook: 1, // Измените этот параметр в зависимости от того, когда должна начинаться анимация (от 0 до 1)
+      reverse: true, // Анимация будет проигрываться только один раз
+    })
+      .setClassToggle(section, animationClass) // Добавить/удалить класс анимации при скролле
+      .addTo(controller);
+  });
 }
+
+// Пример использования:
+// handleAnimation("section", "visible");
+
+
+// function handleAnimation(className, animationClass) {
+//     let elements = document.querySelectorAll(className);
+//     elements.forEach(element => {
+//         const rect = element.getBoundingClientRect();
+//         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+//             element.classList.add(animationClass);
+//         } else {
+//             element.classList.remove(animationClass);
+//         }
+//     });
+// }
 
 export function onScrollAndLoad() {
     const animations = [
