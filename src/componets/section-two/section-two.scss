@@ -1,4 +1,179 @@
 @import '../styles';
 body{
-    
+    section.section2{
+        padding: 100px 0;
+        h2{
+            text-align: center;
+            font-size: 60px;
+            text-transform: capitalize;
+            font-family: $frank;
+            color: $color-black;
+        }
+        p{
+            color: $color-black;
+            text-align: center;
+            font-family: $lato;
+            &.p-item-1{
+                margin-top: 20px;
+            }
+        }
+        .collections{
+            .collections-cards{
+                width: 100%;
+                max-width: $max-width;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+                .overflow-hidden{
+                    max-width: 375px;
+                    flex: 1;
+                }
+                .collections-card{
+                    width: 100%;
+                    max-width: 375px;
+                    padding: 20px;
+                    margin-top: 45px;
+                    height: 400px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    &.card-item-1{
+                        background-size: 130%;
+                        background-image: url('../../../public/media/collection-card1.jpg');
+                    }
+                    &.card-item-2{
+                        background-size: 110%;
+                        background-image: url('../../../public/media/collection-card2.jpg');
+                    }
+                    &.card-item-3{
+                        background-size: 110%;
+                        background-image: url('../../../public/media/collection-card3.webp');
+                    }
+                    form{
+                        width: 100%;
+                        margin-top: 90%;
+                        button{
+                            width: 100%;
+                        }
+                    }
+                    form.link-item-1{
+                        button{
+                            font-size: 18px;
+                            background-color: white;
+                            text-transform: uppercase;
+                            &:hover{
+                                border: 4px solid black !important;
+                            }
+                        }
+                        .c-button {
+                            color: #000;
+                            font-weight: 700;
+                            font-size: 16px;
+                            text-decoration: none;
+                            padding: 0.9em 1.6em;
+                            cursor: pointer;
+                            display: inline-block;
+                            vertical-align: middle;
+                            position: relative;
+                            z-index: 1;
+                          }
+                          
+                          .c-button--gooey {
+                            color: $color-black;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            border: 4px solid white;
+                            border-radius: 0;
+                            position: relative;
+                            transition: all 200ms ease;
+                          }
+                          
+                          .c-button--gooey .c-button__blobs {
+                            height: 100%;
+                            filter: url(#goo);
+                            overflow: hidden;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: -3px;
+                            right: -1px;
+                            z-index: -1;
+                          }
+                          .c-button--gooey .c-button__blobs div {
+                            background-color: black;
+                            width: 34%;
+                            height: 100%;
+                            border-radius: 100%;
+                            position: absolute;
+                            transform: scale(1.4) translateY(125%) translateZ(0);
+                            transition: all 500ms ease;
+                          }
+                          .c-button--gooey .c-button__blobs div:nth-child(1) {
+                            left: -5%;
+                          }
+                          .c-button--gooey .c-button__blobs div:nth-child(2) {
+                            left: 30%;
+                            transition-delay: 30ms;
+                          }
+                          .c-button--gooey .c-button__blobs div:nth-child(3) {
+                            left: 66%;
+                            transition-delay: 25ms;
+                          }
+                          .c-button--gooey:hover {
+                            color: #fff;
+                          }        
+                          .c-button--gooey:hover .c-button__blobs div {
+                            transform: scale(1.4) translateY(0) translateZ(0);
+                          }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1000px) {
+    .absolute-img-background{
+        width: 250px;
+        height: 250px;
+        background: rgba(250, 220, 217, 0.21);
+        &.item-1{
+            padding: 17px;
+            right: 30px;
+            transform: translateY(-200px);
+            img{
+                margin-top: 53%;
+                margin-left: 60%;
+            }
+        }
+        &.item-2{
+            padding: 30px;
+            right: 45%;
+            transform: translateY(-30px);
+            img{
+                margin-top: 40%;
+            }
+        }
+    }
+}
+@media (max-width: 1000px){
+    .collections .collections-cards{
+        flex-direction: column;
+        // align-items: center;
+        .overflow-hidden{
+            margin: 0 auto;
+            min-width: 300px;
+        }
+    }
+    .absolute-img-background{
+        display: none;
+    }
+}
+@media(max-width: 900px){
+    section.section2{
+        padding: 30px !important;
+        h2{
+            font-size: 40px !important;
+        }
+    }
 }

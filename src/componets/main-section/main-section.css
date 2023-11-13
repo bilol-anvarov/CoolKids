@@ -1,3 +1,19 @@
+.absolute {
+  position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index--1 {
+  z-index: -1;
+}
+
 body main.section1 {
   width: 100%;
   height: 100%;
@@ -104,7 +120,7 @@ body main.section1 .main .main-info h1 {
 }
 body main.section1 .main .main-info h1 span {
   text-transform: uppercase;
-  min-width: 20px;
+  min-width: 15px;
   display: inline-block;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -167,9 +183,6 @@ body main.section1 img.main-bottom {
   bottom: 0;
   z-index: 1;
   width: 100%;
-}
-body .absolute {
-  position: absolute;
 }
 body p {
   font-family: "Lato", sans-serif;
@@ -276,9 +289,15 @@ body p {
         align-self: flex-end;
   }
   .main .absolut-img-2 {
-    top: 140% !important;
+    top: 116% !important;
     right: 60% !important;
     left: auto !important;
+  }
+  .main .main-info h1 {
+    font-size: 40px !important;
+  }
+  .main .main-info p {
+    font-size: 14px;
   }
 
   .absolut-img-3,

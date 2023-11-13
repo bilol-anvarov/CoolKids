@@ -1,0 +1,204 @@
+.absolute {
+  position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index--1 {
+  z-index: -1;
+}
+
+body section.section2 {
+  padding: 100px 0;
+}
+body section.section2 h2 {
+  text-align: center;
+  font-size: 60px;
+  text-transform: capitalize;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #140005;
+}
+body section.section2 p {
+  color: #140005;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+body section.section2 p.p-item-1 {
+  margin-top: 20px;
+}
+body section.section2 .collections .collections-cards {
+  width: 100%;
+  max-width: 1185px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+body section.section2 .collections .collections-cards .overflow-hidden {
+  max-width: 375px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+body section.section2 .collections .collections-cards .collections-card {
+  width: 100%;
+  max-width: 375px;
+  padding: 20px;
+  margin-top: 45px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body section.section2 .collections .collections-cards .collections-card.card-item-1 {
+  background-size: 130%;
+  background-image: url("../../../public/media/collection-card1.jpg");
+}
+body section.section2 .collections .collections-cards .collections-card.card-item-2 {
+  background-size: 110%;
+  background-image: url("../../../public/media/collection-card2.jpg");
+}
+body section.section2 .collections .collections-cards .collections-card.card-item-3 {
+  background-size: 110%;
+  background-image: url("../../../public/media/collection-card3.webp");
+}
+body section.section2 .collections .collections-cards .collections-card form {
+  width: 100%;
+  margin-top: 90%;
+}
+body section.section2 .collections .collections-cards .collections-card form button {
+  width: 100%;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 button {
+  font-size: 18px;
+  background-color: white;
+  text-transform: uppercase;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 button:hover {
+  border: 4px solid black !important;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button--gooey {
+  color: #140005;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid white;
+  border-radius: 0;
+  position: relative;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button--gooey .c-button__blobs {
+  height: 100%;
+  -webkit-filter: url(#goo);
+          filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button--gooey .c-button__blobs div {
+  background-color: black;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  -webkit-transform: scale(1.4) translateY(125%) translateZ(0);
+          transform: scale(1.4) translateY(125%) translateZ(0);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  -webkit-transition-delay: 30ms;
+          transition-delay: 30ms;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  -webkit-transition-delay: 25ms;
+          transition-delay: 25ms;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button--gooey:hover {
+  color: #fff;
+}
+body section.section2 .collections .collections-cards .collections-card form.link-item-1 .c-button--gooey:hover .c-button__blobs div {
+  -webkit-transform: scale(1.4) translateY(0) translateZ(0);
+          transform: scale(1.4) translateY(0) translateZ(0);
+}
+
+@media (min-width: 1000px) {
+  .absolute-img-background {
+    width: 250px;
+    height: 250px;
+    background: rgba(250, 220, 217, 0.21);
+  }
+  .absolute-img-background.item-1 {
+    padding: 17px;
+    right: 30px;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  .absolute-img-background.item-1 img {
+    margin-top: 53%;
+    margin-left: 60%;
+  }
+  .absolute-img-background.item-2 {
+    padding: 30px;
+    right: 45%;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  .absolute-img-background.item-2 img {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  .collections .collections-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collections .collections-cards .overflow-hidden {
+    margin: 0 auto;
+    min-width: 300px;
+  }
+
+  .absolute-img-background {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  section.section2 {
+    padding: 30px !important;
+  }
+  section.section2 h2 {
+    font-size: 40px !important;
+  }
+}

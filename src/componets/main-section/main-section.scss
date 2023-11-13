@@ -84,7 +84,7 @@ body{
                     margin-bottom: 30px;
                     span{
                         text-transform: uppercase;
-                        min-width: 20px;
+                        min-width: 15px;
                         display: inline-block;
                         transition: all 0.2s ease-in-out;
                     }
@@ -146,9 +146,6 @@ body{
             z-index: 1;
             width: 100%;
         }
-    }
-    .absolute{
-        position: absolute;
     }
     p{
         font-family: $lato;
@@ -238,9 +235,17 @@ body{
             align-self: flex-end;
         }
         .absolut-img-2{
-            top: 140% !important;
+            top: 116% !important;
             right: 60% !important;
             left: auto !important;
+        }
+        .main-info{
+            h1{
+                font-size: 40px !important;
+            }
+            p{
+                font-size: 14px;
+            }
         }
     }
     .absolut-img-3,
