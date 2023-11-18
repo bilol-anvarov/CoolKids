@@ -5,7 +5,7 @@ function sectionTwo(){
     return(
         <>
             <section className='section2'>
-                <img src='media/group 427.svg' className='absolute absolute-img-4 z-index--1 animate__animated slide-left' width='20%'></img>
+                <img src='media/group 427.svg' className='absolute absolute-img-4 z-index--1 animate__animated slide-left' width='30%'></img>
                 <div className='overflow-hidden'>
                     <h2 className="animate__animated fade-up" >
                         new collection
@@ -94,6 +94,40 @@ function sectionTwo(){
                 </div>
                 <div className="absolute-img-background item-2 absolute z-index--1 animate__animated fade-up">
                     <img src="media/Group 36.svg" alt="" className='absolut-img-5' />
+                </div>
+                <div className="collections-item-2">
+                    <div className="absolute white-box"></div>
+                    <div className="overflow-hidden collections-main-img">
+                        <img src="media/collections-img4.jpg" className='animate__animated zoom-left' alt="" />
+                    </div>
+                    <div className="overflow-hidden">
+                        <div className="collections-info animate__animated zoom-right">
+                            <h2>
+                                best fashion since 2022
+                            </h2>
+                            <p>
+                            Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis 
+                            condimentum lobortis. ad litora torquent per.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="collections-table animate__animated zoom-right">
+                        <div className="table-item item-1">
+                        <h2>2022</h2>
+                        <p>Fifash founded</p>
+                        </div>
+                        <div className="line-y"></div>
+                        <div className="table-item item-2">
+                        <h2>2022</h2>
+                        <p>Fifash founded</p>
+                        </div>
+                        <div className="line-y"></div>
+                        <div className="table-item item-3">
+                        <h2>2022</h2>
+                        <p>Fifash founded</p>
+                        </div>
                 </div>
             </section>
         </>

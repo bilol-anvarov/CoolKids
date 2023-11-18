@@ -130,6 +130,64 @@ body{
                 }
             }
         }
+        .collections-item-2{
+            width: 100%;
+            max-width: $max-width;
+            margin: 120px auto 0;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            .white-box{
+                width: 100px;
+                height: 100px;
+                z-index: 20;
+                transform: translate(-440px, 480px);
+                background-color: white;
+            }
+            .collections-main-img img{
+                border-top-left-radius: 160px;
+                width: 100%;
+                max-height: 550px;
+                max-width: 600px;
+                min-width: 450px;
+                object-fit: cover;
+                object-position: center center;
+            }
+            .collections-info{
+                width: 100%;
+                max-width: 415px;
+                h2,p{
+                    text-align: left;
+                    margin-top: 30px;
+                }
+                p{
+                    line-height: 180%;
+                    font-size: 18px;
+                }
+            }
+        }
+        .collections-table{
+            background-color: white;
+            display: flex;
+            gap: 8%;
+            width: 60%;
+            padding: 20px 60px;
+            position: absolute;
+            left: 40%;
+            transform: translateY(-100px);
+            max-width: 675px;
+            h2{
+                font-size: 36px;
+                font-family: $lato;
+                color: $color-black;
+            }
+            p{
+                font-size: 16px;
+                margin-top: 10px;
+                font-family: $lato;
+                color: $color-black;
+            }
+        }
     }
 }
 @media (min-width: 1000px) {
@@ -153,7 +211,7 @@ body{
             img{
                 margin-top: 40%;
             }
-        }
+        }   
     }
 }
 @media (max-width: 1000px){
@@ -165,6 +223,21 @@ body{
             min-width: 300px;
         }
     }
+    .collections-table{
+        position: relative !important;
+        right: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        transform: translateY(0px) !important;
+    }
+    .collections-item-2{
+        .collections-info{
+            width: ;
+            h2,p{
+                text-align: center !important;
+            }
+        }
+    }
     .absolute-img-background{
         display: none;
     }
@@ -174,6 +247,12 @@ body{
         padding: 30px !important;
         h2{
             font-size: 40px !important;
+        }
+    }
+    .collections-item-2{
+        flex-direction: column;
+        .collections-main-img img{
+            min-width: 300px !important;
         }
     }
 }

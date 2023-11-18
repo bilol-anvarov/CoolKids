@@ -88,11 +88,9 @@ body{
                         display: inline-block;
                         transition: all 0.2s ease-in-out;
                     }
-                    &:hover{
-                        span.text-elastic{
-                            animation: elastic 2s;
-                            animation-fill-mode: forwards;
-                        }
+                    span.text-elastic{
+                        animation: elastic 2s;
+                        animation-fill-mode: forwards;
                     }
                 }
                 p{
@@ -177,6 +175,7 @@ body{
                 backdrop-filter: blur(5px);
                 overflow: hidden;
                 z-index: 35;
+                opacity: 1 !important;
                 ul{
                     padding: 150px 50px 50px;
                     height: 100%;

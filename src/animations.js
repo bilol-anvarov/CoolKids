@@ -62,6 +62,7 @@ function handleAnimation(classAnimName, animationClass) {
       
         if((pageYOffset > elementOffset - elementPoint) && pageYOffset < (elementOffset + elementHeight)){
             element.classList.add(animationClass)
+            element.classList.add('opacity1')
         } else if (elementOffset > window.innerHeight + 500){
             return
         } 
