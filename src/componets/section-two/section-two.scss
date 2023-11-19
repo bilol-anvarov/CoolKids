@@ -225,22 +225,6 @@ body{
             min-width: 300px;
         }
     }
-    .collections-table{
-        position: relative !important;
-        right: 0 !important;
-        left: 0 !important;
-        margin-top: 20px;
-        padding: 10px 20px !important;
-        width: 100% !important;
-        transform: translateY(0px) !important;
-        gap: 10px !important;
-        h2{
-            font-size: 16px !important;
-        }
-        p{
-            font-size: 13px;
-        }
-    }
     .collections-item-2{
         .collections-info{
             width: 100%;
@@ -265,6 +249,22 @@ body{
         flex-direction: column;
         .collections-main-img img{
             min-width: 300px !important;
+        }
+    }
+    .collections-table{
+        position: relative !important;
+        right: 0 !important;
+        left: 0 !important;
+        margin-top: 20px;
+        padding: 10px 20px !important;
+        width: 100% !important;
+        transform: translateY(0px) !important;
+        gap: 10px !important;
+        h2{
+            font-size: 16px !important;
+        }
+        p{
+            font-size: 13px;
         }
     }
     p{

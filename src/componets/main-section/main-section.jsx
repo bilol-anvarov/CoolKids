@@ -15,11 +15,11 @@ function MainSection(){
                             <div className='overflow-hidden'>
                                 <div className="links animate__animated fade-right ">
                                     <ul>
-                                        <li><a href="#">collection</a></li>
-                                        <li><a href="#">boys</a></li>
-                                        <li><a href="#">girls</a></li>
-                                        <li><a href="#">trends</a></li>
-                                        <li><a href="#">contact</a></li>
+                                        <li><a href="#collection">collection</a></li>
+                                        <li><a href="#boys">boys</a></li>
+                                        <li><a href="#girls">girls</a></li>
+                                        <li><a href="#trends">trends</a></li>
+                                        <li><a href="#contact">contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -60,5 +60,6 @@ function MainSection(){
 }
 // анимации
 window.addEventListener('load', hoverToText);
-
+window.addEventListener('load', onScrollAndLoad);
+window.addEventListener('scroll', onScrollAndLoad);
 export default MainSection;

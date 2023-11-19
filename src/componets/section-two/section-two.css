@@ -269,24 +269,6 @@ body section.section2 .collections-table p {
     min-width: 300px;
   }
 
-  .collections-table {
-    position: relative !important;
-    right: 0 !important;
-    left: 0 !important;
-    margin-top: 20px;
-    padding: 10px 20px !important;
-    width: 100% !important;
-    -webkit-transform: translateY(0px) !important;
-            transform: translateY(0px) !important;
-    gap: 10px !important;
-  }
-  .collections-table h2 {
-    font-size: 16px !important;
-  }
-  .collections-table p {
-    font-size: 13px;
-  }
-
   .collections-item-2 .collections-info {
     width: 100%;
   }
@@ -315,6 +297,24 @@ section.section2 .section2-main-title {
   }
   .collections-item-2 .collections-main-img img {
     min-width: 300px !important;
+  }
+
+  .collections-table {
+    position: relative !important;
+    right: 0 !important;
+    left: 0 !important;
+    margin-top: 20px;
+    padding: 10px 20px !important;
+    width: 100% !important;
+    -webkit-transform: translateY(0px) !important;
+            transform: translateY(0px) !important;
+    gap: 10px !important;
+  }
+  .collections-table h2 {
+    font-size: 16px !important;
+  }
+  .collections-table p {
+    font-size: 13px;
   }
 
   p {

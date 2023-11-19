@@ -44,3 +44,4 @@ export function hoverToText() {
   element.innerHTML = '';
   editedText.forEach(wordElement => element.appendChild(wordElement));
 }
+

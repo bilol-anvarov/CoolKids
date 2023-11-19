@@ -1,10 +1,9 @@
 import React from 'react';
-import { onScrollAndLoad } from '../../animations';
 
 function sectionTwo(){
     return(
         <>
-            <section className='section2'>
+            <section className='section2' id='collection'>
                 <img src='media/group 427.svg' className='absolute absolute-img-4 z-index--1 animate__animated slide-left' width='30%'></img>
                 <div className='overflow-hidden'>
                     <h2 className="section2-main-title animate__animated fade-up" >
@@ -103,7 +102,7 @@ function sectionTwo(){
                     <div className="overflow-hidden">
                         <div className="collections-info animate__animated zoom-right">
                             <h2>
-                                best fashion since 2022
+                                best fashion since 2023
                                 
                             </h2>
                             <p>
@@ -121,20 +120,18 @@ function sectionTwo(){
                         </div>
                         <div className="line-y"></div>
                         <div className="table-item item-2">
-                        <h2>2022</h2>
-                        <p>Fifash founded</p>
+                        <h2>8800+</h2>
+                        <p>Product Sold</p>
                         </div>
                         <div className="line-y"></div>
                         <div className="table-item item-3">
                         <h2>2022</h2>
-                        <p>Fifash founded</p>
+                        <p>Best Reviews</p>
                         </div>
                 </div>
             </section>
         </>
     )
 }
-window.addEventListener('load', onScrollAndLoad);
-window.addEventListener('scroll', onScrollAndLoad);
 
 export default sectionTwo;

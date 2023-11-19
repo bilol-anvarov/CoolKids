@@ -1,0 +1,163 @@
+.absolute {
+  position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index--1 {
+  z-index: -1;
+}
+
+.animate__animated {
+  opacity: 0;
+}
+
+.opacity1 {
+  opacity: 1 !important;
+}
+
+body section.section3 {
+  background-color: #140005;
+  color: white;
+  overflow: hidden;
+}
+body section.section3 .section-three {
+  overflow: visible !important;
+  width: 100%;
+  max-width: 1185px;
+  margin: 0 auto;
+  padding: 80px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body section.section3 .section-three .section3-info {
+  width: 100%;
+  max-width: 350px;
+  color: white;
+  overflow: visible;
+}
+body section.section3 .section-three .section3-info h2 {
+  color: #FFF;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+body section.section3 .section-three .section3-info p {
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  margin-top: 15px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  /* 32.4px */
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+body section.section3 .section-three .section3-info a {
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  border: white 1px solid;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+body section.section3 .section-three .section3-info a:hover {
+  background-color: white;
+  color: #140005;
+}
+body section.section3 .section-three .section3-slider {
+  width: 100%;
+  max-width: 700px;
+  overflow: visible;
+}
+body section.section3 .section-three .section3-slider .carousel .slider-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+  max-width: 350px;
+}
+body section.section3 .section-three .section3-slider .carousel .slider-card img.sliderImg {
+  width: 100%;
+  height: 375px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.section3 .section-three .section3-slider .carousel .slider-card .price {
+  background-color: white;
+  padding: 40px 20px;
+}
+body section.section3 .section-three .section3-slider .carousel .slider-card .price h4 {
+  color: #140005;
+  margin: 10px 0;
+  font-family: "Frank Ruhl Libre", serif;
+}
+body section.section3 .section-three .section3-slider .carousel .slider-card .price p span.gray {
+  color: #9B9B9B;
+  margin-right: 20px;
+  text-decoration: line-through;
+  font-size: 15px;
+}
+body section.section3 .section-three .section3-slider .carousel .slider-card .price p span.black {
+  color: #140005;
+  font-weight: 700;
+  font-size: 18px;
+}
+body section.section3 .section-three .section3-slider .slider {
+  width: 1150px;
+}
+body section.section3 .section-three .section3-slider .slick-list {
+  cursor: move;
+}
+body section.section3 .section-three .section3-slider .slick-dots {
+  bottom: -40px !important;
+  text-align: left !important;
+}
+body section.section3 .section-three .section3-slider li button::before {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+}
+body section.section3 .section-three .section3-slider li.slick-active button:before {
+  color: white !important;
+}
+
+@media (max-width: 1000px) {
+  .section-three {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 70px !important;
+    padding: 30px;
+  }
+}

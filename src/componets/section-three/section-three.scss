@@ -1,0 +1,127 @@
+@import '../styles';
+body section.section3{
+    background-color: $color-black;
+    color: white;
+    overflow: hidden;
+    .section-three{
+        overflow: visible !important;
+        width: 100%;
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 80px 10px;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        .section3-info{
+            width: 100%;
+            max-width: 350px;
+            color: white;
+            overflow: visible;
+            h2{
+                color: #FFF;
+                font-family: $frank;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+            p{
+                color: #FFF;
+                font-family: $lato;
+                margin-top: 15px;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 180%; /* 32.4px */
+                text-transform: capitalize;
+                margin-bottom: 50px;
+            }
+            a{
+                color: #FFF;
+                font-family: $lato;
+                font-size: 16px;
+                border: white 1px solid;
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+                padding: 20px 50px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: white;
+                    color: $color-black;
+                }
+            }
+        }
+        .section3-slider{
+            width: 100%;
+            max-width: 700px;
+            overflow: visible;
+            .carousel{
+                .slider-card{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+                    max-width: 350px;
+                    img.sliderImg{
+                        width: 100%;
+                        height: 375px;
+                        object-fit: cover;
+                    }
+                    .price{
+                        background-color: white;
+                        padding: 40px 20px;
+                        h4{
+                            color: $color-black;
+                            margin: 10px 0;
+                            font-family: $frank;
+                        }
+                        p{
+                            span.gray{
+                                color: #9B9B9B;
+                                margin-right: 20px;
+                                text-decoration: line-through;
+                                font-size: 15px;
+                            }
+                            span.black{
+                                color: $color-black;
+                                font-weight: 700;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            .slider{
+                width: 1150px;
+            }
+            .slick-list{
+                cursor: move;
+            }
+            .slick-dots{
+                bottom: -40px !important;
+                text-align: left !important;
+            }
+            li button::before{
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: white;
+                color: transparent;
+            }
+            li.slick-active button:before{
+                color: white !important;
+
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .section-three{
+        flex-direction: column;
+        gap: 70px !important;
+        padding: 30px;
+    }
+}

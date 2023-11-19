@@ -8,6 +8,10 @@ body::after {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .animate__animated {
   overflow: hidden;
 }
