@@ -7,7 +7,7 @@ function sectionTwo(){
             <section className='section2'>
                 <img src='media/group 427.svg' className='absolute absolute-img-4 z-index--1 animate__animated slide-left' width='30%'></img>
                 <div className='overflow-hidden'>
-                    <h2 className="animate__animated fade-up" >
+                    <h2 className="section2-main-title animate__animated fade-up" >
                         new collection
                     </h2>
                 </div>
@@ -104,6 +104,7 @@ function sectionTwo(){
                         <div className="collections-info animate__animated zoom-right">
                             <h2>
                                 best fashion since 2022
+                                
                             </h2>
                             <p>
                             Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 

@@ -48,7 +48,7 @@ function MainSection(){
                         </div>
                     </div>
                     <img src="media/Group 36.svg" alt="" className="absolut-img-2 absolute animate__animated slide-down "/>
-                    <div className="main-img animate__animated fade-in">
+                    <div className="main-img animate__animated zoom-in">
                         <img src="media/main-photo.png" alt=""/>
                     </div>
                     <img src="media/Group 36.svg" alt="" className="absolut-img-3 absolute animate__animated slide-right "/>
