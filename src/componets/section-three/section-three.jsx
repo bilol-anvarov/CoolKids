@@ -4,7 +4,7 @@ import $ from 'jquery';
 import 'slick-carousel/slick/slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import './section-three.css'
 function sectionThree(){
     return(
         <>

@@ -1,0 +1,86 @@
+@import '../styles';
+body{
+    section.section4{
+        padding-top: 100px;
+        width: 100%;
+        max-width: $max-width;
+        margin: 0 auto;
+        h2.sectionH2Main{
+            font-size: 60px;
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sectionFourCards{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            .sectionFourCard{
+                min-width: 280px;
+                width: 100%;
+                max-width: 280px;
+                img.fourImg{
+                    width: 100%;
+                    height: 375px;
+                    object-fit: cover;
+                }
+                .card-info{
+                    background-color: white;
+                    padding: 40px 20px;
+                    text-align: center;
+                    h4.cards-name{
+                        color: $color-black;
+                        margin: 10px 0;
+                        font-family: $frank;
+                    }
+                    p{
+                        span.gray{
+                            color: #9B9B9B;
+                            margin-right: 20px;
+                            text-decoration: line-through;
+                            font-size: 15px;
+                        }
+                        span.black{
+                            color: $color-black;
+                            font-weight: 700;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    section.section4{
+        h2.sectionH2Main{
+            font-size: 40px !important;
+        }
+        .sectionFourCards{
+            padding: 0 10px;
+            .sectionFourCard{
+                min-width: 100px !important;
+                max-width: 165px !important;
+                img.fourImg{
+                    height: 170px !important;
+                }
+                .card-info{
+                    padding: 20px 10px !important;
+                    h4.cards-name{
+                        font-size: 15px !important;
+                    }
+                    p{
+                        span.gray{
+                            font-size: 14px !important;
+                        }
+                        span.black{
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

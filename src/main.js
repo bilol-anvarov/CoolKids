@@ -1,8 +1,8 @@
 export function hamburger() {
-    let hamburger = document.querySelector('#hamburger');
-    hamburger.classList.toggle('active')
-    let header = document.querySelector('header');
-    header.classList.toggle('active')
+  let hamburger = document.querySelector('#hamburger');
+  hamburger.classList.toggle('active');
+  let header = document.querySelector('header');
+  header.classList.toggle('active');
 }
 export function hoverToText() {
   let element = document.querySelector('#hoverElem');
@@ -45,3 +45,18 @@ export function hoverToText() {
   editedText.forEach(wordElement => element.appendChild(wordElement));
 }
 
+export function scrollHeader(){
+  let header = document.querySelector('header');
+  if(window.scrollY > 1){
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+}
+
+export function deleteMenuScroll(){
+  let hamburger = document.querySelector('#hamburger');
+  hamburger.classList.remove('active');
+  let header = document.querySelector('header');
+  header.classList.remove('active');
+}

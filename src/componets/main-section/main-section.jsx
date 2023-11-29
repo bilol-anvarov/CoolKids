@@ -2,6 +2,9 @@ import React from 'react';
 import { hamburger } from '../../main';
 import { hoverToText } from '../../main';
 import { onScrollAndLoad } from '../../animations';
+import { scrollHeader } from '../../main';
+import { deleteMenuScroll } from '../../main';
+import './main-section.css';
 function MainSection(){
     return(
         <>
@@ -62,4 +65,6 @@ function MainSection(){
 window.addEventListener('load', hoverToText);
 window.addEventListener('load', onScrollAndLoad);
 window.addEventListener('scroll', onScrollAndLoad);
+window.addEventListener('scroll', deleteMenuScroll);
+window.addEventListener('scroll', scrollHeader);
 export default MainSection;

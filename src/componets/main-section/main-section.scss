@@ -5,16 +5,33 @@ body{
         height: 100%;
         min-height: 100vh;
         max-height: 1400px;
+        padding-top: 150px;
         background-color: #FADCD9;
         header{
             width: 100%;
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            transition: all 0.2s ease-in-out;
             background-color: transparent;
+            &.scroll{
+                background: rgb(255,255,255);
+                background: linear-gradient(45deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 100%);
+                backdrop-filter: blur(5px);
+                .header-bg{
+                    padding: 20px 15px !important;
+                }
+                &.active{
+                    backdrop-filter: none !important;
+                }
+            }
             .header-bg{
                 width: 100%;
                 max-width: $max-width;
                 margin: 0 auto;
                 padding: 50px 15px;
                 display: flex;
+                transition: padding .2s ease-in-out;
                 align-items: center;
                 justify-content: space-between;
                 .logo img{
@@ -164,6 +181,7 @@ body{
             .links{
                 position: absolute;
                 max-height: 0;
+                min-height: 0;
                 height: 70%;
                 width: 100%;
                 left: 0;
@@ -180,6 +198,7 @@ body{
                     padding: 150px 50px 50px;
                     height: 100%;
                     flex-direction: column;
+                    gap: 10px;
                     justify-content: space-between;
                     align-items: center;
                 }
@@ -190,20 +209,17 @@ body{
                 cursor: pointer;
                 z-index: 40;
                 svg {
-                    /* The size of the SVG defines the overall size */
                     height: 3em;
-                    /* Define the transition for transforming the SVG */
                     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
                     .line-top-bottom {
                         stroke-dasharray: 12 63;
                     }                    
                     .line {
                         fill: none;
-                        stroke: white;
+                        stroke: $color-black;
                         stroke-linecap: round;
                         stroke-linejoin: round;
                         stroke-width: 3;
-                        /* Define the transition for transforming the Stroke */
                         transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
                                     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
                       }
@@ -222,6 +238,7 @@ body{
         }
         &.active{
             .links{
+                min-height: 400px;
                 max-height: 500px;
             }
         }

@@ -1,0 +1,108 @@
+.absolute {
+  position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index--1 {
+  z-index: -1;
+}
+
+.animate__animated {
+  opacity: 0;
+}
+
+.opacity1 {
+  opacity: 1 !important;
+}
+
+body section.section4 {
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1185px;
+  margin: 0 auto;
+}
+body section.section4 h2.sectionH2Main {
+  font-size: 60px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 30px;
+}
+body section.section4 .sectionFourCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+body section.section4 .sectionFourCards .sectionFourCard {
+  min-width: 280px;
+  width: 100%;
+  max-width: 280px;
+}
+body section.section4 .sectionFourCards .sectionFourCard img.fourImg {
+  width: 100%;
+  height: 375px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.section4 .sectionFourCards .sectionFourCard .card-info {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+body section.section4 .sectionFourCards .sectionFourCard .card-info h4.cards-name {
+  color: #140005;
+  margin: 10px 0;
+  font-family: "Frank Ruhl Libre", serif;
+}
+body section.section4 .sectionFourCards .sectionFourCard .card-info p span.gray {
+  color: #9B9B9B;
+  margin-right: 20px;
+  text-decoration: line-through;
+  font-size: 15px;
+}
+body section.section4 .sectionFourCards .sectionFourCard .card-info p span.black {
+  color: #140005;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  section.section4 h2.sectionH2Main {
+    font-size: 40px !important;
+  }
+  section.section4 .sectionFourCards {
+    padding: 0 10px;
+  }
+  section.section4 .sectionFourCards .sectionFourCard {
+    min-width: 100px !important;
+    max-width: 165px !important;
+  }
+  section.section4 .sectionFourCards .sectionFourCard img.fourImg {
+    height: 170px !important;
+  }
+  section.section4 .sectionFourCards .sectionFourCard .card-info {
+    padding: 20px 10px !important;
+  }
+  section.section4 .sectionFourCards .sectionFourCard .card-info h4.cards-name {
+    font-size: 15px !important;
+  }
+  section.section4 .sectionFourCards .sectionFourCard .card-info p span.gray {
+    font-size: 14px !important;
+  }
+  section.section4 .sectionFourCards .sectionFourCard .card-info p span.black {
+    font-size: 14px !important;
+  }
+}
