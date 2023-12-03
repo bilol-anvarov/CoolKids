@@ -28,6 +28,12 @@ body section.section4 {
   max-width: 1185px;
   margin: 0 auto;
 }
+body section.section4 img.absolut-img-4 {
+  right: 0;
+  z-index: -1;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
 body section.section4 h2.sectionH2Main {
   font-size: 60px;
   text-transform: capitalize;
@@ -78,10 +84,182 @@ body section.section4 .sectionFourCards .sectionFourCard .card-info p span.black
   font-weight: 700;
   font-size: 18px;
 }
+body section.section4 .banner {
+  margin-top: 100px;
+  background-color: #FADCD9;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5% 6% 0 6%;
+  overflow-x: hidden;
+}
+body section.section4 .banner .banner-info {
+  width: 100%;
+  max-width: 450px;
+}
+body section.section4 .banner .banner-info h2 {
+  font-size: 60px;
+  text-transform: capitalize;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #140005;
+}
+body section.section4 .banner .banner-info p.banner-p {
+  font-size: 18px;
+  line-height: 180%;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  color: #140005;
+  font-weight: 400%;
+  margin-bottom: 30px;
+}
+body section.section4 .banner .banner-info .times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+body section.section4 .banner .banner-info .times .time-block {
+  background-color: white;
+  padding: 14px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body section.section4 .banner .banner-info .times .time-block .time {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+body section.section4 .banner .banner-info .times .time-block .time-p {
+  margin-top: -10px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+body section.section4 .banner .banner-info a.banner-btn {
+  text-transform: uppercase;
+  color: #F9F1F0;
+  background-color: #140005;
+  padding: 20px 70px;
+  margin-top: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: solid 3px #140005;
+  font-weight: 700;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body section.section4 .banner .banner-info a.banner-btn:hover {
+  color: #140005;
+  background-color: transparent;
+}
+body section.section4 .banner .banner-img img.banner-img-main {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 500px;
+}
+body section.section4 .banner .banner-img img.absolut-img-6 {
+  left: 80%;
+  z-index: 10;
+  right: 14%;
+}
+body section.section4 .banner .banner-img .banner-cube {
+  right: 0;
+  width: 300px;
+  height: 150px;
+  -webkit-transform: translateY(350px);
+          transform: translateY(350px);
+  background: rgba(255, 255, 255, 0.23);
+}
+body section.section4 .absolut-img-7 {
+  width: 100%;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+body section.sectionLast4 {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+body section.sectionLast4 .sectionLastFourImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+body section.sectionLast4 .sectionLastFourImg .overflow-hidden {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 300px;
+}
+body section.sectionLast4 .sectionLastFourImg .overflow-hidden:hover {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+body section.sectionLast4 .sectionLastFourImg .flex-img-container {
+  width: 100%;
+  height: 100%;
+}
+body section.sectionLast4 .sectionLastFourImg .flex-img-container img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
 
 @media (max-width: 900px) {
-  section.section4 h2.sectionH2Main {
+  section.section4 .banner h2,
+section.section4 h2.sectionH2Main {
     font-size: 40px !important;
+  }
+  section.section4 .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.section4 .banner .banner-p {
+    font-size: 15px !important;
+  }
+  section.section4 .banner .banner-img {
+    margin-top: 50px;
+  }
+  section.section4 .banner .time {
+    font-size: 40px !important;
+  }
+  section.section4 .banner .time-p {
+    font-size: 14px;
   }
   section.section4 .sectionFourCards {
     padding: 0 10px;
@@ -104,5 +282,9 @@ body section.section4 .sectionFourCards .sectionFourCard .card-info p span.black
   }
   section.section4 .sectionFourCards .sectionFourCard .card-info p span.black {
     font-size: 14px !important;
+  }
+  section.section4 .absolut-img-6,
+section.section4 .absolut-img-4 {
+    display: none;
   }
 }

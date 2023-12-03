@@ -11,15 +11,6 @@ root.render(
   </React.StrictMode>
 );
 
-// function headerBurger() {
-//   const hamburger = document.querySelector('header');
-//   console.log(hamburger)
-//   if (hamburger) {
-//     hamburger.addEventListener('click', function() {
-//       hamburger.classList.toggle('active');
-//     });
-//   }
-// };
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

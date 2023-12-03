@@ -1,0 +1,67 @@
+@import '../styles';
+body{
+    footer{
+        width: 100%;
+        padding: 0 0 60px;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: $color-black;
+        .footer-btn{
+            background-color: white;
+            position: relative;
+            color: $color-black;
+            padding: 20px 40px;
+            width: fit-content;
+            z-index: 20;
+            text-decoration: none;
+            font-size: 18px;
+            border: white solid 2px;
+            top: -30px;
+            text-transform: uppercase;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                background-color: $color-black;
+                color: white;
+            }
+        }
+        .links{
+            width: 100%;
+            padding: 20px;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            a{
+                text-transform: uppercase;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+                margin-bottom: 20px;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    color: $color-white;
+                }
+            }
+        }
+        p.copyright{
+            color: white;
+            text-transform: capitalize;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .footer-btn{
+        font-size: 17px !important;
+        padding: 10px 20px !important;
+    }
+    footer .links{
+        flex-direction: column;
+    }
+}
