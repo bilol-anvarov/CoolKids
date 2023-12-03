@@ -43,6 +43,7 @@ body footer .footer-btn {
   position: relative;
   color: #140005;
   padding: 20px 40px;
+  font-weight: 700;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
