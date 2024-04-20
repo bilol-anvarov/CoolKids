@@ -38,6 +38,7 @@ const BannerFunction = () =>{
                 <img src="./media/Group 36.svg" className="absolut-img-6 absolute" alt="" />
             </div>
         </div>
+        <div id="yandex_rtb_R-A-7673098-1"></div>
         </>
     )
 }
